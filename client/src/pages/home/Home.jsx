@@ -1,10 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div>
-      <h1>This is home</h1>
-      <Link to='/products'>Products</Link>
+    <div className='my-24'>
+      <h1 className='text-3xl text-center font-medium my-6'>
+        Welcome to Hb collection
+      </h1>
+
+      <Link to='/products'>
+        <button className='btn btn-outline btn-error'>See products</button>
+      </Link>
     </div>
   );
 };
