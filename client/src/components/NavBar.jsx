@@ -27,6 +27,9 @@ const NavBar = () => {
       <li className='nav-link'>
         <NavLink to='/products'>Products</NavLink>
       </li>
+      <li className='nav-link'>
+        <NavLink to='/login'>Login</NavLink>
+      </li>
     </>
   );
   return (
@@ -56,9 +59,10 @@ const NavBar = () => {
             {navLinks}
           </ul>
         </div>
-        {/* <Link to='/'>
-          <img src={logo} alt='' width='72px' height='36px' />
-        </Link> */}
+        <Link to='/'>
+          {/* <img src={logo} alt='' width='72px' height='36px' /> */}
+          <h1 className='text-xl text-gray-700'>Hb collection</h1>
+        </Link>
       </div>
       <div className='navbar-center hidden lg:flex'>
         <ul id='nav-cen'>{navLinks}</ul>
