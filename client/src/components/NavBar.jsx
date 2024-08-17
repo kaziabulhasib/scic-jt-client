@@ -27,15 +27,10 @@ const NavBar = () => {
       <li className='nav-link'>
         <NavLink to='/products'>Products</NavLink>
       </li>
-      <li className='nav-link'>
-        <NavLink to='/login'>Login</NavLink>
-      </li>
     </>
   );
   return (
-    <div
-      // style={{ boxShadow: "0px 2px 10px 0px rgba(0, 0, 0, 0.19)" }}
-      className='navbar bg-base-100 opacity-90  px-24 py-4 fixed  top-0 z-10 max-w-full  h-20 mb-24 border mx-auto'>
+    <div className='navbar bg-base-100 opacity-90   py-4   z-10   h-20 mb-24  mx-auto'>
       <div className='navbar-start'>
         <div className='dropdown'>
           <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
@@ -60,15 +55,17 @@ const NavBar = () => {
           </ul>
         </div>
         <Link to='/'>
-          {/* <img src={logo} alt='' width='72px' height='36px' /> */}
           <h1 className='text-xl text-gray-700'>Hb collection</h1>
         </Link>
       </div>
       <div className='navbar-center hidden lg:flex'>
         <ul id='nav-cen'>{navLinks}</ul>
+        {/* <button className='btn btn-outline btn-error' onClick={handleLogout}>
+          Logout
+        </button> */}
       </div>
 
-      {/* <div className='navbar-end'>
+      <div className='navbar-end'>
         <div>
           {user ? (
             <>
@@ -102,11 +99,7 @@ const NavBar = () => {
             </NavLink>
           )}
         </div>
-
-        <button className='btn btn-outline btn-sm mx-6 btn-error '>
-          <span className='hover:text-white text-red-500'> Appoitment</span>
-        </button>
-      </div> */}
+      </div>
     </div>
   );
 };

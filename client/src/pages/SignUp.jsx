@@ -32,7 +32,7 @@ const SignUp = () => {
   const handleGoogleLogin = () => {
     signinWithGoogle()
       .then((res) => {
-        console.log(res.user);
+        console.log(res.user.displayName);
         navigate("/");
         toast.success("Google Login");
       })
