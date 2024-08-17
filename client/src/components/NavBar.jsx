@@ -55,7 +55,7 @@ const NavBar = () => {
           </ul>
         </div>
         <Link to='/'>
-          <h1 className='text-xl text-gray-700'>Hb collection</h1>
+          <h1 className='text-xl text-gray-700'>Hb Digital</h1>
         </Link>
       </div>
       <div className='navbar-center hidden lg:flex'>

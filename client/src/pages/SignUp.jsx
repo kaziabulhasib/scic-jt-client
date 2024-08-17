@@ -106,11 +106,11 @@ const SignUp = () => {
                       placeholder='Password'
                     />
                   </div>
-                  <input
+                  {/* <input
                     type='file'
                     name='image'
                     className='file-input w-full max-w-sm my-6'
-                  />
+                  /> */}
 
                   <div className='flex items-center justify-between my-4'>
                     <button className='px-6 py-2 font-medium text-white transition-colors duration-300 transform bg-gray-900 rounded-md hover:bg-gray-800 dark:hover:bg-gray-700 focus:outline-none focus:bg-gray-800 dark:focus:bg-gray-700'>
