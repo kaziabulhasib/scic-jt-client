@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className='my-24'>
+    <div className='my-24 min-h-[45vh]'>
       <h1 className='text-3xl text-center font-medium my-6'>
         Welcome to Hb collection
       </h1>

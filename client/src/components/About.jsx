@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className='my-24'>
+    <div className='my-24 min-h-[45vh]'>
       <h1 className='text-3xl text-center font-medium my-6'>
         we have one of the best collection of mobile accecorries
       </h1>
