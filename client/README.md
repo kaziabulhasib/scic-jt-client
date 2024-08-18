@@ -1,8 +1,15 @@
-# React + Vite
+# Hb Digital
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Setup
 
-Currently, two official plugins are available:
+If you clone this project and intend to run it locally on your machine, follow these steps to install the required dependencies:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Open your terminal.
+2. Navigate to the root directory of the cloned project.
+3. Run the following command to install the necessary packages:
+
+   ```bash
+   npm install
+   ```
+
+---
