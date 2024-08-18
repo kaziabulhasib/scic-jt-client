@@ -10,11 +10,11 @@ const SignUp = () => {
   const handleSignUP = (e) => {
     e.preventDefault();
     const form = e.target;
-    // const name = form.name.value;
+    const name = form.name.value;
     const email = form.email.value;
     const password = form.password.value;
-    const image = form.image.files[0].name;
-    const user = { name, email, password, image };
+
+    const user = { name, email, password };
     console.log(user);
     //
     createUser(email, password)
@@ -22,7 +22,7 @@ const SignUp = () => {
         const user = result.user;
         console.log(user);
         form.reset();
-        navigate("/");
+        navigate("/products");
       })
       .catch((error) => console.log(error));
   };
@@ -33,7 +33,7 @@ const SignUp = () => {
     signinWithGoogle()
       .then((res) => {
         console.log(res.user.displayName);
-        navigate("/");
+        navigate("/products");
         toast.success("Google Login");
       })
       .catch((error) => {
