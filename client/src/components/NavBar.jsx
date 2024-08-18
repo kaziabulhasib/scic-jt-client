@@ -1,36 +1,35 @@
 import { useContext } from "react";
-// import logo from "../assets/logo.svg";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-
-import "./navbar.css";
 import toast from "react-hot-toast";
 import { AuthContext } from "../providers/AuthProvider";
+import "./navbar.css";
+
 const NavBar = () => {
   const { logout, user } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleLogout = () => {
     logout();
-    toast.success("Logout Sucessfull");
+    toast.success("Logout Successful");
     // navigate("/signup");
   };
+
   const navLinks = (
     <>
       <li className='nav-link'>
         <NavLink to='/'>Home</NavLink>
       </li>
       <li className='nav-link'>
-        {" "}
         <NavLink to='/about'>About</NavLink>
       </li>
-
       <li className='nav-link'>
         <NavLink to='/products'>Products</NavLink>
       </li>
     </>
   );
+
   return (
-    <div className='navbar bg-base-100 opacity-90   py-4   z-10   h-20 mb-24  mx-auto'>
+    <div className='navbar bg-base-100 opacity-90 py-4 z-10 h-20 mb-24 mx-auto'>
       <div className='navbar-start'>
         <div className='dropdown'>
           <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
@@ -69,7 +68,7 @@ const NavBar = () => {
         <div>
           {user ? (
             <>
-              <div className='dropdown '>
+              <div className='dropdown'>
                 <div
                   tabIndex={0}
                   role='button'
@@ -89,7 +88,11 @@ const NavBar = () => {
                   tabIndex={0}
                   className='menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-center'>
                   <li>
-                    <a>{user?.displayName ? user?.displayName : user?.name}</a>
+                    <a>
+                      {user?.displayName
+                        ? user.displayName
+                        : "user name not found"}
+                    </a>
                   </li>
                   <li onClick={handleLogout}>
                     <a>Logout</a>

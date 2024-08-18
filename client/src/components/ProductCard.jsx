@@ -25,8 +25,8 @@ const ProductCard = ({ product }) => {
           <span className='ml-8 '>Category : {categoryName}</span>
         </p>
         <p className=' text-[14px] text-left font-medium my-4 text-blue-800 '>
-          Brand: <span className=''>{ratings}</span>{" "}
-          <span className='ml-8 '>Category : {price}</span>
+          Ratings: <span className=''>{ratings}</span>{" "}
+          <span className='ml-8 '>Price : {price}</span>
         </p>
 
         <div className='card-actions justify-end'>
