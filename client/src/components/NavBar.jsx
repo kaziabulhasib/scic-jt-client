@@ -76,8 +76,12 @@ const NavBar = () => {
                   className='btn btn-ghost btn-circle avatar'>
                   <div className='w-10 rounded-full'>
                     <img
-                      alt='Tailwind CSS Navbar component'
-                      src={user?.photoURL}
+                      alt='User profile Picture'
+                      src={
+                        user?.photoURL
+                          ? user.photoURL
+                          : "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
+                      }
                     />
                   </div>
                 </div>
@@ -85,7 +89,7 @@ const NavBar = () => {
                   tabIndex={0}
                   className='menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-center'>
                   <li>
-                    <a>{user?.displayName}</a>
+                    <a>{user?.displayName ? user?.displayName : user?.name}</a>
                   </li>
                   <li onClick={handleLogout}>
                     <a>Logout</a>
