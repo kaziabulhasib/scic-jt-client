@@ -29,7 +29,7 @@ const NavBar = () => {
   );
 
   return (
-    <div className='navbar bg-base-100 opacity-90 py-4 z-10 h-20 mb-24 mx-auto'>
+    <div className='navbar bg-base-100 opacity-90 py-4 z-10 h-20 lg:mb-8 mb-4 mx-auto'>
       <div className='navbar-start'>
         <div className='dropdown'>
           <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
@@ -54,7 +54,9 @@ const NavBar = () => {
           </ul>
         </div>
         <Link to='/'>
-          <h1 className='text-xl text-gray-700 font-bold'>Hb Digital</h1>
+          <h1 className='text-xl lg:text-3xl text-gray-700 font-bold'>
+            Hb Digital
+          </h1>
         </Link>
       </div>
       <div className='navbar-center hidden lg:flex'>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className='bg-white dark:bg-gray-900 my-16'>
-      <div className='container px-6 py-8 mx-auto'>
+      <div className='container lg:px-6 px-2 py-8 mx-auto'>
         <div className='flex flex-col items-center text-center'>
           <Link to='/'>
             <h1 className='text-xl text-gray-700 font-bold'>Hb Digital</h1>

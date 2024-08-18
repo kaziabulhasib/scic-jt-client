@@ -37,7 +37,7 @@ const Products = () => {
       sortOrder,
     }).toString();
 
-    fetch(`http://localhost:5000/products?${queryParams}`)
+    fetch(`https://jt-server-five.vercel.app/products?${queryParams}`)
       .then((res) => res.json())
       .then((data) => {
         setProducts(data.products);
@@ -62,8 +62,8 @@ const Products = () => {
       <h1 className='text-3xl text-center font-bold '>Our Products</h1>
 
       {/* Filter and Search */}
-      <div className='flex flex-col lg:flex-row items-center gap-4 mt-6'>
-        <div className='lg:w-1/4 w-full'>
+      <div className='flex flex-col lg:flex-row lg:items-center gap-4 mt-6'>
+        <div className='lg:w-1/4 w-3/4'>
           <label className='input input-bordered flex items-center gap-2'>
             <input
               type='text'
